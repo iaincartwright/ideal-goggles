@@ -1,0 +1,106 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.22512.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iConsole", "iConsole.csproj", "{5BC68DBE-45FC-4949-AD99-D3D9C9A4E904}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iHarness", "..\iHarness\iHarness.csproj", "{AA10C01F-81FC-4CFD-A46F-EB887A0CFAB9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iUtils", "..\iUtils\iUtils.csproj", "{0FC42B0E-CCC8-4914-8848-4A4420900BC7}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6F4A3EB4-BFFB-44DB-A48E-EA5A5D7FED1D} = {6F4A3EB4-BFFB-44DB-A48E-EA5A5D7FED1D}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "iCppLib", "..\iCppLib\iCppLib.vcxproj", "{6F4A3EB4-BFFB-44DB-A48E-EA5A5D7FED1D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|Win32 = Debug|Win32
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|Win32 = Release|Win32
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5BC68DBE-45FC-4949-AD99-D3D9C9A4E904}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BC68DBE-45FC-4949-AD99-D3D9C9A4E904}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BC68DBE-45FC-4949-AD99-D3D9C9A4E904}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{5BC68DBE-45FC-4949-AD99-D3D9C9A4E904}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{5BC68DBE-45FC-4949-AD99-D3D9C9A4E904}.Debug|Win32.ActiveCfg = Debug|Any CPU
+		{5BC68DBE-45FC-4949-AD99-D3D9C9A4E904}.Debug|x86.ActiveCfg = Debug|x86
+		{5BC68DBE-45FC-4949-AD99-D3D9C9A4E904}.Debug|x86.Build.0 = Debug|x86
+		{5BC68DBE-45FC-4949-AD99-D3D9C9A4E904}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BC68DBE-45FC-4949-AD99-D3D9C9A4E904}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5BC68DBE-45FC-4949-AD99-D3D9C9A4E904}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{5BC68DBE-45FC-4949-AD99-D3D9C9A4E904}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{5BC68DBE-45FC-4949-AD99-D3D9C9A4E904}.Release|Win32.ActiveCfg = Release|Any CPU
+		{5BC68DBE-45FC-4949-AD99-D3D9C9A4E904}.Release|x86.ActiveCfg = Release|x86
+		{5BC68DBE-45FC-4949-AD99-D3D9C9A4E904}.Release|x86.Build.0 = Release|x86
+		{AA10C01F-81FC-4CFD-A46F-EB887A0CFAB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA10C01F-81FC-4CFD-A46F-EB887A0CFAB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA10C01F-81FC-4CFD-A46F-EB887A0CFAB9}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{AA10C01F-81FC-4CFD-A46F-EB887A0CFAB9}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{AA10C01F-81FC-4CFD-A46F-EB887A0CFAB9}.Debug|Win32.ActiveCfg = Debug|Any CPU
+		{AA10C01F-81FC-4CFD-A46F-EB887A0CFAB9}.Debug|x86.ActiveCfg = Debug|x86
+		{AA10C01F-81FC-4CFD-A46F-EB887A0CFAB9}.Debug|x86.Build.0 = Debug|x86
+		{AA10C01F-81FC-4CFD-A46F-EB887A0CFAB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA10C01F-81FC-4CFD-A46F-EB887A0CFAB9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA10C01F-81FC-4CFD-A46F-EB887A0CFAB9}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{AA10C01F-81FC-4CFD-A46F-EB887A0CFAB9}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{AA10C01F-81FC-4CFD-A46F-EB887A0CFAB9}.Release|Win32.ActiveCfg = Release|Any CPU
+		{AA10C01F-81FC-4CFD-A46F-EB887A0CFAB9}.Release|x86.ActiveCfg = Release|x86
+		{AA10C01F-81FC-4CFD-A46F-EB887A0CFAB9}.Release|x86.Build.0 = Release|x86
+		{0FC42B0E-CCC8-4914-8848-4A4420900BC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FC42B0E-CCC8-4914-8848-4A4420900BC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FC42B0E-CCC8-4914-8848-4A4420900BC7}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{0FC42B0E-CCC8-4914-8848-4A4420900BC7}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{0FC42B0E-CCC8-4914-8848-4A4420900BC7}.Debug|Win32.ActiveCfg = Debug|Any CPU
+		{0FC42B0E-CCC8-4914-8848-4A4420900BC7}.Debug|x86.ActiveCfg = Debug|x86
+		{0FC42B0E-CCC8-4914-8848-4A4420900BC7}.Debug|x86.Build.0 = Debug|x86
+		{0FC42B0E-CCC8-4914-8848-4A4420900BC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FC42B0E-CCC8-4914-8848-4A4420900BC7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0FC42B0E-CCC8-4914-8848-4A4420900BC7}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{0FC42B0E-CCC8-4914-8848-4A4420900BC7}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{0FC42B0E-CCC8-4914-8848-4A4420900BC7}.Release|Win32.ActiveCfg = Release|Any CPU
+		{0FC42B0E-CCC8-4914-8848-4A4420900BC7}.Release|x86.ActiveCfg = Release|x86
+		{0FC42B0E-CCC8-4914-8848-4A4420900BC7}.Release|x86.Build.0 = Release|x86
+		{6F4A3EB4-BFFB-44DB-A48E-EA5A5D7FED1D}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{6F4A3EB4-BFFB-44DB-A48E-EA5A5D7FED1D}.Debug|Mixed Platforms.ActiveCfg = Debug|Win32
+		{6F4A3EB4-BFFB-44DB-A48E-EA5A5D7FED1D}.Debug|Mixed Platforms.Build.0 = Debug|Win32
+		{6F4A3EB4-BFFB-44DB-A48E-EA5A5D7FED1D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{6F4A3EB4-BFFB-44DB-A48E-EA5A5D7FED1D}.Debug|Win32.Build.0 = Debug|Win32
+		{6F4A3EB4-BFFB-44DB-A48E-EA5A5D7FED1D}.Debug|x86.ActiveCfg = Debug|Win32
+		{6F4A3EB4-BFFB-44DB-A48E-EA5A5D7FED1D}.Debug|x86.Build.0 = Debug|Win32
+		{6F4A3EB4-BFFB-44DB-A48E-EA5A5D7FED1D}.Release|Any CPU.ActiveCfg = Release|Win32
+		{6F4A3EB4-BFFB-44DB-A48E-EA5A5D7FED1D}.Release|Mixed Platforms.ActiveCfg = Release|Win32
+		{6F4A3EB4-BFFB-44DB-A48E-EA5A5D7FED1D}.Release|Mixed Platforms.Build.0 = Release|Win32
+		{6F4A3EB4-BFFB-44DB-A48E-EA5A5D7FED1D}.Release|Win32.ActiveCfg = Release|Win32
+		{6F4A3EB4-BFFB-44DB-A48E-EA5A5D7FED1D}.Release|Win32.Build.0 = Release|Win32
+		{6F4A3EB4-BFFB-44DB-A48E-EA5A5D7FED1D}.Release|x86.ActiveCfg = Release|Win32
+		{6F4A3EB4-BFFB-44DB-A48E-EA5A5D7FED1D}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://theartofapplications.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = iConsole.csproj
+		SccLocalPath1 = .
+		SccProjectUniqueName2 = ..\\iCppLib\\iCppLib.vcxproj
+		SccProjectName2 = ../iCppLib
+		SccLocalPath2 = ..\\iCppLib
+		SccProjectUniqueName3 = ..\\iHarness\\iHarness.csproj
+		SccProjectName3 = ../iHarness
+		SccLocalPath3 = ..\\iHarness
+		SccProjectUniqueName4 = ..\\iUtils\\iUtils.csproj
+		SccProjectName4 = ../iUtils
+		SccLocalPath4 = ..\\iUtils
+	EndGlobalSection
+EndGlobal

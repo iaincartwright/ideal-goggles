@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ServiceConfiguration serviceName="AzureLDR" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="3" osVersion="*" schemaVersion="2014-06.2.4">
+  <Role name="AzureLDRWorker">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.Enabled" value="true" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountUsername" value="iain" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountEncryptedPassword" value="MIIBsAYJKoZIhvcNAQcDoIIBoTCCAZ0CAQAxggFhMIIBXQIBADBFMDExLzAtBgNVBAMTJnRoZWFydG9mYXBwcy5hY2Nlc3Njb250cm9sLndpbmRvd3MubmV0AhDC2R6Ku9Jshk34K3hzTdg5MA0GCSqGSIb3DQEBAQUABIIBACzsr3TKq0EYKo5Aku4TISnArBh+npOKoW9KnGelR9/Pc4NnfoxLbGyo+vXszpGk0JHN0ala7I1COCWQ7+h+6jC5vgI3T+tfRI1ztDxQe2uBTbWKJpb2jFsjhcOHHdY6K2Hq9CZQUrr9ukKoARZEQcyZ/DQe2mpbtIzfMEYdMbPuOmHO1Yt3E+KLz/vzd6NpyxwQnMDwqknP1W3hNqlY7Gkr5sJdLP2qo7FKQR7MLVvSJKc+Om/eKI5X+ycn/AMAgsBmqraktvuq4oIs3/5iGzXYE1z1p6mGQ0WXFl2bLi7ZCvxm7TDTTUb3yjMarUrjKNAKOckuodUOh1EY3lwhnocwMwYJKoZIhvcNAQcBMBQGCCqGSIb3DQMHBAik6KlDleyH9oAQK1bunJlreVFrqoISmdzyIg==" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountExpiration" value="2014-01-21T23:59:59.0000000+11:00" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteForwarder.Enabled" value="true" />
+    </ConfigurationSettings>
+    <Certificates>
+      <Certificate name="Microsoft.WindowsAzure.Plugins.RemoteAccess.PasswordEncryption" thumbprint="EC935C6F425123F1F3DB2F3A6498F492F2CDC140" thumbprintAlgorithm="sha1" />
+    </Certificates>
+  </Role>
+</ServiceConfiguration>

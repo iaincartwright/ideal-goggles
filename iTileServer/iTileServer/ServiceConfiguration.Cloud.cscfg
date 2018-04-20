@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ServiceConfiguration serviceName="iTileServer" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="1" osVersion="*" schemaVersion="2015-04.2.6">
+  <Role name="iTileWeb">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.Enabled" value="true" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountUsername" value="iain" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountEncryptedPassword" value="MIIBnQYJKoZIhvcNAQcDoIIBjjCCAYoCAQAxggFOMIIBSgIBADAyMB4xHDAaBgNVBAMME1dpbmRvd3MgQXp1cmUgVG9vbHMCEG0Gdz9PP4yHSaVmY74vjlAwDQYJKoZIhvcNAQEBBQAEggEALrtUzfa+2ZSrRjwts+a2HgBdO9fq1NJDKRHqpevAGLR5L0d4MWHOizTBC5Y7z/gIGypMzlid4HrN9/GcERJMCT6PwdeNMCVEk901fUE/fzLTqJA9QIyW9oHys1NP8rs6hE9cUH6bxotjqxYHZKRSfCsuR0mIZE08YEqiSYHVcnXzW1UyqucCCcc7dxTtnSJ2kJi8qdyY4oNsSu/THK40HBH187PeR7JW+g+wMTUd45QuSinI1gcfJaDx0tYGSJS1YgvenKIBqr7jrB5c9a+gIzJbITYxZYc74mijSF/k21UQrK+8NJg86XYgB+tmMZxpBiFyOUXtXG4tFotdY+P86jAzBgkqhkiG9w0BBwEwFAYIKoZIhvcNAwcECCmnBK6izhTSgBDNTdFWjjuAKWlNpq8Tz4gy" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountExpiration" value="2012-12-15T23:59:59.0000000+11:00" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteForwarder.Enabled" value="true" />
+    </ConfigurationSettings>
+    <Certificates>
+      <Certificate name="Microsoft.WindowsAzure.Plugins.RemoteAccess.PasswordEncryption" thumbprint="97CB5C572EE799080FC53E74A5559D93AAA8A4BE" thumbprintAlgorithm="sha1" />
+    </Certificates>
+  </Role>
+</ServiceConfiguration>

@@ -1,0 +1,23 @@
+﻿<UserControl
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:ed="http://schemas.microsoft.com/expression/2010/drawing" x:Class="iTileServerSL.MainPage"
+    mc:Ignorable="d" d:DesignHeight="300" d:DesignWidth="400">
+	<Border BorderThickness="3" Name="border1" BorderBrush="#680C96" Margin="5">
+		<Grid Name="grid1">
+			<Grid.RowDefinitions>
+				<RowDefinition />
+				<RowDefinition />
+				<RowDefinition Height="Auto" />
+			</Grid.RowDefinitions>
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition />
+				<ColumnDefinition />
+				<ColumnDefinition />
+			</Grid.ColumnDefinitions>
+			<Button Content="Home" HorizontalAlignment="Stretch" Name="_homeButton" VerticalAlignment="Stretch" Padding="3" AllowDrop="True" Click="_homeButton_Click" Margin="3" Grid.Row="2" Grid.Column="2" />
+		</Grid>
+	</Border>
+</UserControl>

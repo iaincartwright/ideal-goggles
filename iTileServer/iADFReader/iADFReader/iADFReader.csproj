@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0B7DCB99-D97E-4B19-B81F-ABA324D2C9DF}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>iADFReader</RootNamespace>
+    <AssemblyName>iADFReader</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="gdal_csharp">
+      <HintPath>fwtools\gdal_csharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fwtools\adrg.dll" />
+    <Content Include="fwtools\bgd.dll" />
+    <Content Include="fwtools\dtcanada.dll" />
+    <Content Include="fwtools\dted.dll" />
+    <Content Include="fwtools\dtusa.dll" />
+    <Content Include="fwtools\gdalconst_csharp.dll" />
+    <Content Include="fwtools\gdalconst_wrap.dll" />
+    <Content Include="fwtools\gdal_csharp.dll" />
+    <Content Include="fwtools\gdal_fw.dll" />
+    <Content Include="fwtools\gdal_wrap.dll" />
+    <Content Include="fwtools\gdk-1.3.dll" />
+    <Content Include="fwtools\geos_fw.dll" />
+    <Content Include="fwtools\geotiff_fw.dll" />
+    <Content Include="fwtools\glib-1.3.dll" />
+    <Content Include="fwtools\gmodule-1.3.dll" />
+    <Content Include="fwtools\gnu-intl.dll" />
+    <Content Include="fwtools\gthread-1.3.dll" />
+    <Content Include="fwtools\gtk-1.3.dll" />
+    <Content Include="fwtools\gtkextra-0.99.dll" />
+    <Content Include="fwtools\gtkglarea.dll" />
+    <Content Include="fwtools\hdf5dll.dll" />
+    <Content Include="fwtools\hdf_fw.dll" />
+    <Content Include="fwtools\iconv.dll" />
+    <Content Include="fwtools\jpeg12_osgeo.dll" />
+    <Content Include="fwtools\jpeg_osgeo.dll" />
+    <Content Include="fwtools\libcurl.dll" />
+    <Content Include="fwtools\libeay32.dll" />
+    <Content Include="fwtools\libexpat.dll" />
+    <Content Include="fwtools\libfcgi.dll" />
+    <Content Include="fwtools\libmap.dll" />
+    <Content Include="fwtools\libmysql.dll" />
+    <Content Include="fwtools\libpq.dll" />
+    <Content Include="fwtools\libtiff_fw.dll" />
+    <Content Include="fwtools\libxml2.dll" />
+    <Content Include="fwtools\lodbc.dll" />
+    <Content Include="fwtools\lti_dsdk_cdll.dll" />
+    <Content Include="fwtools\lti_dsdk_dll.dll" />
+    <Content Include="fwtools\mapscript.dll" />
+    <Content Include="fwtools\mapscript_csharp.dll" />
+    <Content Include="fwtools\mfhdf_fw.dll" />
+    <Content Include="fwtools\msvcp60.dll" />
+    <Content Include="fwtools\msvcp70.dll" />
+    <Content Include="fwtools\msvcp71.dll" />
+    <Content Include="fwtools\msvcr71.dll" />
+    <Content Include="fwtools\msvcrt.dll" />
+    <Content Include="fwtools\NCScnet_fw.dll" />
+    <Content Include="fwtools\NCSEcwC_fw.dll" />
+    <Content Include="fwtools\NCSEcw_fw.dll" />
+    <Content Include="fwtools\NCSUtil_fw.dll" />
+    <Content Include="fwtools\netcdf.dll" />
+    <Content Include="fwtools\ogdi_32b1.dll" />
+    <Content Include="fwtools\ogr_csharp.dll" />
+    <Content Include="fwtools\ogr_wrap.dll" />
+    <Content Include="fwtools\osr_csharp.dll" />
+    <Content Include="fwtools\osr_wrap.dll" />
+    <Content Include="fwtools\proj.dll" />
+    <Content Include="fwtools\pthread.dll" />
+    <Content Include="fwtools\python23.dll" />
+    <Content Include="fwtools\remote.dll" />
+    <Content Include="fwtools\rpf.dll" />
+    <Content Include="fwtools\skeleton.dll" />
+    <Content Include="fwtools\sqlite3.dll" />
+    <Content Include="fwtools\ssleay32.dll" />
+    <Content Include="fwtools\szlibdll.dll" />
+    <Content Include="fwtools\vrf.dll" />
+    <Content Include="fwtools\xerces-c_2_7.dll" />
+    <Content Include="fwtools\xerces-depdom_2_7.dll" />
+    <Content Include="fwtools\zlib1.dll" />
+    <Content Include="fwtools\zlib_fw.dll" />
+    <Content Include="fwtools\zlib_osgeo.dll" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
