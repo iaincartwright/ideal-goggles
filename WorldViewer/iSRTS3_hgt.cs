@@ -7,7 +7,7 @@ using System.IO.Compression;
 
 namespace WorldViewer
 {
-	internal class iSRTS3_hgt : IRawTile<float>
+	internal class Srts3Hgt : IRawTile<float>
 	{
 		public Dictionary<string, string> Properties { get; private set; }
 		public int RowCount { get; private set; }
@@ -22,34 +22,34 @@ namespace WorldViewer
 		public float[] CellData { get; private set; }
 		public float NoDataValue { get; private set; }
 
-		public iSRTS3_hgt()
+		public Srts3Hgt()
 		{
 			Properties = new Dictionary<string, string>(64);
 			
 			CellData = new float[0];
 
-			_buffer = new byte[CONST.SRTM3_TILE_EDGE];
+			Buffer = new byte[Const.Srtm3TileEdge];
 		}
 
-		public void Load(int lat_grid, int lon_grid)
+		public void Load(int a_latGrid, int a_lonGrid)
 		{
 
 		}
 
-		public byte[] _buffer;
+		public byte[] Buffer;
 
-		public void Load(string filename)
+		public void Load(string a_filename)
 		{
 			try
 			{
-				using (FileStream stream = new FileStream(filename, FileMode.Open, FileAccess.Read, FileShare.Read))
+				using (FileStream stream = new FileStream(a_filename, FileMode.Open, FileAccess.Read, FileShare.Read))
 				{
 					//stream.ReadByte();
 					//stream.ReadByte();
 
 					GZipStream decomp = new GZipStream(stream, CompressionMode.Decompress, true);
 
-					int byteCount = decomp.Read(_buffer, 0, CONST.SRTM3_TILE_EDGE);
+					int byteCount = decomp.Read(Buffer, 0, Const.Srtm3TileEdge);
 
 					Console.WriteLine("Read {0} bytes", byteCount);
 				}

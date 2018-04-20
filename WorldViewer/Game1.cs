@@ -29,17 +29,17 @@ namespace WorldViewer
       //spriteBatch = new SpriteBatch(GraphicsDevice);
 
       // TODO: use this.Content to load your game content here
-      _testFile1 = new iDEM_ASCII();
+      _testFile1 = new DemAscii();
 
       _testFile1.Load(@"G:\Users\iain\Downloads\UK_STRM\srtm_36_02.asc");
 
-      _testFile2 = new iSRTS3_hgt();
+      _testFile2 = new Srts3Hgt();
 
       _testFile2.Load(@"G:\Users\iain\Downloads\N00E099.hgt.zip");
     }
 
-    iDEM_ASCII _testFile1;
-    iSRTS3_hgt _testFile2;
+    DemAscii _testFile1;
+    Srts3Hgt _testFile2;
 
     /// <summary>
     /// UnloadContent will be called once per game and is the place to unload
@@ -54,8 +54,8 @@ namespace WorldViewer
     /// Allows the game to run logic such as updating the world,
     /// checking for collisions, gathering input, and playing audio.
     /// </summary>
-    /// <param name="gameTime">Provides a snapshot of timing values.</param>
-    protected void Update(TimeSpan gameTime)
+    /// <param name="a_gameTime">Provides a snapshot of timing values.</param>
+    protected void Update(TimeSpan a_gameTime)
     {
       // Allows the game to exit
       //if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed)
@@ -69,8 +69,8 @@ namespace WorldViewer
     /// <summary>
     /// This is called when the game should draw itself.
     /// </summary>
-    /// <param name="gameTime">Provides a snapshot of timing values.</param>
-    protected void Draw(TimeSpan gameTime)
+    /// <param name="a_gameTime">Provides a snapshot of timing values.</param>
+    protected void Draw(TimeSpan a_gameTime)
     {
       //GraphicsDevice.Clear(Color.CornflowerBlue);
 

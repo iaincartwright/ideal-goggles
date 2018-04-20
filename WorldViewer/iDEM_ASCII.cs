@@ -6,7 +6,7 @@ using System.IO;
 
 namespace WorldViewer
 {
-	internal class iDEM_ASCII : IRawTile<float>
+	internal class DemAscii : IRawTile<float>
 	{
 		public Dictionary<string, string> Properties { get; private set; }
 		public int RowCount { get; private set; }
@@ -21,7 +21,7 @@ namespace WorldViewer
 		public float[] CellData { get; private set; }
 		public float NoDataValue { get; private set; }
 
-		public iDEM_ASCII()
+		public DemAscii()
 		{
 			Properties = new Dictionary<string, string>(64);
 			
@@ -30,17 +30,17 @@ namespace WorldViewer
 
 		// lat_grid and long_grid reefer to lower left
 		// coordinate lon 0 -> 179 lat = -90 -> +90
-		public void Load(int lat_grid, int lon_grid)
+		public void Load(int a_latGrid, int a_lonGrid)
 		{
 		}
 
-		public void Load(string filename)
+		public void Load(string a_filename)
 		{
 			List<string> dataLines  = new List<string>();
 
 			try
 			{
-				dataLines.AddRange(File.ReadAllLines(filename));
+				dataLines.AddRange(File.ReadAllLines(a_filename));
 
 				int index = 0;
 				bool readHeader = true;
